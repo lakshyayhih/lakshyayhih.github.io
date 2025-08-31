@@ -1,22 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>👋 Hi, I'm Lakshy</h1>
-  <p>Welcome to my Data Analyst Portfolio!</p>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Data Analyst | SQL | Python | Power BI</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Power BI Sales Dashboard</strong><br>
-      <a href="https://app.powerbi.com/view?r=xxxxxxx" target="_blank">🔗 View Interactive Report</a>
-    </li>
-    <li>
-      <strong>Excel Analysis</strong><br>
-      <a href="https://1drv.ms/x/s!xxxxxxx" target="_blank">🔗 View Interactive Excel</a>
-    </li>
-  </ul>
+  <!-- ===== Hero Section ===== -->
+  <section class="hero container">
+    <h2>Turning Data into Insights</h2>
+    <p>I help businesses make data-driven decisions by analyzing sales, customer, and operational data using SQL, Python, and Power BI.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="container">
+    <h2>📊 Featured Projects</h2>
+
+    <div class="project-card">
+      <img src="assets/img/dashboard.png" alt="Sales Dashboard" />
+      <div>
+        <h3>Sales Analysis Dashboard</h3>
+        <p>Interactive Power BI dashboard analyzing sales trends, regional performance, and customer segments.</p>
+        <p><strong>Tools:</strong> Power BI, SQL, Python</p>
+        <a href="https://app.powerbi.com/your-link" target="_blank" class="btn">View Live Dashboard</a>
+        <a href="https://github.com/your-username/sales-report-analysis" target="_blank" class="btn-outline">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/img/dashboard.png" alt="Customer Segmentation" />
+      <div>
+        <h3>Customer Segmentation (RFM)</h3>
+        <p>Segmented customers by Recency, Frequency, and Monetary value to improve marketing ROI.</p>
+        <p><strong>Tools:</strong> SQL, Python (Pandas, Matplotlib)</p>
+        <a href="https://github.com/your-username/rfm-analysis" target="_blank" class="btn-outline">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="container">
+    <h2>⚙️ Skills</h2>
+    <ul class="skills-grid">
+      <li><strong>SQL:</strong> Joins, Window Functions, CTEs</li>
+      <li><strong>Python:</strong> Pandas, Matplotlib, Seaborn</li>
+      <li><strong>Visualization:</strong> Power BI, Tableau</li>
+      <li><strong>Excel:</strong> Pivot Tables, VBA Basics</li>
+      <li><strong>Stats:</strong> Hypothesis Testing, Correlation</li>
+      <li><strong>Domain:</strong> Sales, Marketing, E-commerce</li>
+    </ul>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="container">
+    <h2>🙋 About Me</h2>
+    <p>I am a data analyst passionate about uncovering insights that drive business growth. I specialize in cleaning messy datasets, creating intuitive dashboards, and presenting findings in a way that executives can act on immediately.</p>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="container">
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name. Built with ❤️ on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
