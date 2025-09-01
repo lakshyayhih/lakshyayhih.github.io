@@ -5,13 +5,56 @@ a { text-decoration: none; color: inherit; }
 .container { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
 
 /* ==== Header ==== */
-.header { background: #0f172a; color: white; padding: 2rem 0; }
-.header .container { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.header h1 { font-size: 2.2rem; margin-top: 1rem; }
-.header p { font-size: 1.1rem; color: #cbd5e1; margin: 0.5rem 0 1rem; }
-.header nav { margin-top: 0.5rem; }
-.header nav a { margin: 0 0.8rem; font-weight: 500; color: #e2e8f0; transition: color 0.3s; }
-.header nav a:hover { color: #38bdf8; }
+.header {
+  background: #0f172a;
+  color: white;
+  padding: 1rem 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between; /* left and right */
+  align-items: center;            /* vertically aligned */
+  text-align: left;
+}
+
+/* Left side: profile section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between photo and text */
+}
+
+.header-left img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #38bdf8;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header-left p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+/* Right side: nav */
+.header nav a {
+  margin: 0 0.8rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.header nav a:hover {
+  color: #38bdf8;
+}
+
 
 /* ==== Profile Image ==== */
 .profile-pic {
